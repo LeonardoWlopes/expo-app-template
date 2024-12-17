@@ -1,0 +1,12 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      run: pnpm lint
+    verify-types:
+      run: pnpm tsc
+commit-msg:
+  commands:
+    commit-lint:
+      run: pnpm dlx commitlint --edit $1
+
