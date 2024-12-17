@@ -5,8 +5,9 @@ import { useFonts } from 'expo-font'
 
 // components
 import { Stack } from 'expo-router'
-import { ThemeProvider } from 'styled-components/native'
 import { StatusBar } from 'expo-status-bar'
+import { ThemeProvider } from 'styled-components/native'
+import { QueryProvider } from '@/providers/query-provider'
 
 // enums
 import { EFont } from '@/enums/fonts'
@@ -45,11 +46,13 @@ export default function RootLayout() {
 		<ThemeProvider theme={defaultTheme}>
 			<StatusBar style="auto" />
 
-			<Stack
-				screenOptions={{
-					headerShown: false,
-				}}
-			/>
+			<QueryProvider>
+				<Stack
+					screenOptions={{
+						headerShown: false,
+					}}
+				/>
+			</QueryProvider>
 		</ThemeProvider>
 	)
 }

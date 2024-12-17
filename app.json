@@ -1,7 +1,7 @@
 {
 	"expo": {
-		"name": "lactalis-app",
-		"slug": "lactalis-app",
+		"name": "expo-app-template",
+		"slug": "expo-app-template",
 		"version": "1.0.0",
 		"orientation": "portrait",
 		"icon": "./src/assets/images/icon.png",

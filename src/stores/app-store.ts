@@ -1,4 +1,4 @@
-import AsyncStorage from '@react-native-async-storage/async-storage'
+import { zustandStorage } from '@/utils/storage'
 import { create, type StateCreator } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
 
@@ -84,7 +84,7 @@ export const useAppStore = create<
 	...createDisposableSlice(...a),
 	...persist(createPersistentSlice, {
 		name: 'app-store',
-		storage: createJSONStorage(() => AsyncStorage),
+		storage: createJSONStorage(() => zustandStorage),
 		partialize,
 	})(...a),
 	...createSharedSlice(...a),
