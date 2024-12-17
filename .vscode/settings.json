@@ -1,0 +1,43 @@
+{
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+	},
+	"editor.detectIndentation": false,
+	"editor.guides.bracketPairs": "active",
+	"editor.linkedEditing": true,
+	"editor.renderControlCharacters": true,
+	"editor.renderWhitespace": "all",
+	"editor.tabSize": 4,
+	"explorer.fileNesting.patterns": {
+		".editorconfig": "biome*",
+		".env": ".env*",
+		".gitignore": ".git*",
+		"package.json": "tsconfig*, pnpm-lock*, .nvmrc, .releaserc",
+	},
+	"editor.codeActionsOnSave": {
+		"source.organizeImports.biome": "explicit"
+	},
+	"i18n-ally.localesPaths": [
+		"**/languages/**"
+	],
+	"i18n-ally.keystyle": "flat",
+	"i18n-ally.sourceLanguage": "pt-br",
+	"cSpell.words": [
+		"prontu",
+		"Prontu",
+        "lefthook"
+	]
+		
+}
